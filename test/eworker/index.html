@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script type="text/javascript" src="../../lib/animate2debridge.js"></script>
+		<script type="text/javascript">
+			var w = new Animate2DEBridge();
+			
+			var ew = w.get();
+			
+		</script>
+		<script type="text/javascript" src="worker.js"></script>
+		<script type="text/javascript">
+			
+			w.on('test', function(data) {
+				console.warn(data);
+			});
+			
+			w.emit('hello', 'hello world!!!');
+			
+		</script>
+	</head>
+	<body></body>
+</html>
